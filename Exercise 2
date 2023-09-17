@@ -1,0 +1,27 @@
+public class App {
+    public static void main(String[] args) {
+        double subtotal;
+        double rate;
+        double gratuity;
+        double total;
+
+        // instantiate scanner class
+        Scanner input = new Scanner(System.in);
+
+        // Enter the subtotal and the gratuity rate
+        System.out.println("Enter the subtotal: ");
+        subtotal = input.nextDouble();
+
+        System.out.println("Enter the gratuity rate: ");
+        gratuity = input.nextDouble();
+
+        // Caculate gratuity and total
+        gratuity = (subtotal * rate) / 100D;
+        total = subtotal + gratuity;
+
+        // Results
+        System.out.println("The gratuity is $ " + gratuity +
+                " and total is $ " + total);
+    }
+        input.Close();
+}
