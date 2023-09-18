@@ -1,4 +1,6 @@
-public class App {
+import java.util.*;
+
+class Main {
     public static void main(String[] args) {
         double subtotal;
         double rate;
@@ -13,7 +15,7 @@ public class App {
         subtotal = input.nextDouble();
 
         System.out.println("Enter the gratuity rate: ");
-        gratuity = input.nextDouble();
+        rate = input.nextDouble();
 
         // Caculate gratuity and total
         gratuity = (subtotal * rate) / 100D;
@@ -22,6 +24,6 @@ public class App {
         // Results
         System.out.println("The gratuity is $ " + gratuity +
                 " and total is $ " + total);
+        input.close();
     }
-        input.Close();
 }
